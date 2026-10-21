@@ -254,23 +254,37 @@ img {
 
 /* Hero */
 .hero-internal {
-  display: grid;
-  grid-template-columns: 535fr 746fr;
-  gap: 75rem;
-  margin-bottom: 158rem;
+  display: flex;
+  flex-direction: column;
+  gap: 28rem;
+  margin-bottom: 72rem;
 }
 
 .hero-text-internal {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 10rem;
+  max-width: 920rem;
+}
+
+.hero-eyebrow {
+  margin: 0;
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--muted);
 }
 
 .hero-title-internal {
   margin: 0;
-  font-size: 32rem;
+  font-size: 36rem;
   font-weight: 500;
-  line-height: 1.1875;
+  line-height: 1.2;
+}
+
+.internal-image {
+  width: 100%;
 }
 
 .internal-image img {
@@ -285,29 +299,27 @@ img {
 
 @media (width < 1025px) {
   .hero-internal {
-    grid-template-columns: none;
-    gap: 32rem;
-    padding-top: 20rem;
-    margin-bottom: 100rem;
-  }
-
-  .internal-image {
-    grid-row: 1;
+    gap: 20rem;
+    margin-bottom: 56rem;
   }
 
   .hero-title-internal {
-    font-size: 24rem;
+    font-size: 28rem;
   }
 }
 
 @media (width < 768px) {
   .hero-internal {
-    padding-top: 0;
-    margin-bottom: 86rem;
+    gap: 16rem;
+    margin-bottom: 40rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 14rem;
   }
 
   .hero-title-internal {
-    font-size: 18rem;
+    font-size: 22rem;
   }
 }
 
