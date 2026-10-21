@@ -254,37 +254,40 @@ img {
 
 /* Hero */
 .hero-internal {
-  display: flex;
-  flex-direction: column;
-  gap: 28rem;
-  margin-bottom: 72rem;
+  display: grid;
+  grid-template-columns: 535fr 746fr;
+  gap: 75rem;
+  align-items: center;
+  margin-bottom: 158rem;
 }
 
 .hero-text-internal {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
-  max-width: 920rem;
+  gap: 16rem;
+  justify-content: center;
+  padding: 28rem 32rem;
+  border-radius: 14rem;
+  background: #fff;
+  box-shadow: 0 1rem 13.8rem rgba(182, 182, 182, 0.25);
+  border-left: 4rem solid var(--accent);
 }
 
 .hero-eyebrow {
   margin: 0;
-  font-size: 16rem;
+  font-size: 14rem;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
 
 .hero-title-internal {
   margin: 0;
-  font-size: 36rem;
+  font-size: 32rem;
   font-weight: 500;
-  line-height: 1.2;
-}
-
-.internal-image {
-  width: 100%;
+  line-height: 1.1875;
 }
 
 .internal-image img {
@@ -299,27 +302,42 @@ img {
 
 @media (width < 1025px) {
   .hero-internal {
-    gap: 20rem;
-    margin-bottom: 56rem;
+    grid-template-columns: none;
+    gap: 32rem;
+    padding-top: 20rem;
+    margin-bottom: 100rem;
+  }
+
+  .internal-image {
+    grid-row: 1;
+  }
+
+  .hero-text-internal {
+    padding: 22rem 24rem;
   }
 
   .hero-title-internal {
-    font-size: 28rem;
+    font-size: 24rem;
   }
 }
 
 @media (width < 768px) {
   .hero-internal {
-    gap: 16rem;
-    margin-bottom: 40rem;
+    padding-top: 0;
+    margin-bottom: 86rem;
+  }
+
+  .hero-text-internal {
+    padding: 18rem 18rem;
+    gap: 12rem;
   }
 
   .hero-eyebrow {
-    font-size: 14rem;
+    font-size: 12rem;
   }
 
   .hero-title-internal {
-    font-size: 22rem;
+    font-size: 18rem;
   }
 }
 
