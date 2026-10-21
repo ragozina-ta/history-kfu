@@ -1,0 +1,10 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="746" height="450" viewBox="0 0 746 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8E8E8"/>
+      <stop offset="100%" stop-color="#D0D0D0"/>
+    </linearGradient>
+  </defs>
+  <rect width="746" height="450" rx="14" fill="url(#g)"/>
+  <text x="373" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#9A9A9A">Баннер темы</text>
+</svg>

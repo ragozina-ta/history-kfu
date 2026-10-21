@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сопоставь события</title>
+  <link rel="stylesheet" href="css/match-events.css">
+</head>
+<body>
+  <div class="page">
+    <img class="decor" src="img/decor-cards.svg" alt="" aria-hidden="true">
+
+    <h1 class="title" id="page-title">Сопоставь события</h1>
+
+    <div class="table-wrap" role="table" aria-label="Сопоставление дат и событий">
+      <div class="table-head" role="row">
+        <div class="col-date" role="columnheader">Дата</div>
+        <div class="col-event" role="columnheader">Событие</div>
+      </div>
+      <div id="rows"></div>
+    </div>
+
+    <section class="pool-section" aria-label="События для перетаскивания">
+      <p class="pool-hint" id="pool-hint">Перетащите события к нужным датам</p>
+      <div class="pool" id="pool"></div>
+    </section>
+
+    <div class="actions">
+      <button type="button" class="btn btn-check" id="btn-check" disabled>Проверить</button>
+      <button type="button" class="btn btn-reset" id="btn-reset" hidden>Сбросить</button>
+    </div>
+  </div>
+
+  <div class="drag-ghost" id="drag-ghost" hidden></div>
+
+  <script src="js/match-events.js"></script>
+</body>
+</html>
