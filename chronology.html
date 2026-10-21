@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хронологический конструктор</title>
+  <link rel="stylesheet" href="css/chronology.css">
+</head>
+<body>
+  <div class="page">
+    <img class="decor" src="img/decor-cards.svg" alt="" aria-hidden="true">
+
+    <h1 class="title" id="page-title">Хронологический конструктор</h1>
+    <p class="hint" id="hint">Перетащите события к точкам на ленте в хронологическом порядке</p>
+
+    <div class="timeline-wrap" aria-label="Хронологическая лента">
+      <div class="timeline-years" id="years" hidden></div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+
+    <section class="pool-section" aria-label="События">
+      <div class="pool" id="pool"></div>
+    </section>
+
+    <div class="actions">
+      <button type="button" class="btn btn-check" id="btn-check" disabled>Проверить</button>
+      <button type="button" class="btn btn-reset" id="btn-reset" hidden>Сбросить</button>
+    </div>
+  </div>
+
+  <div class="drag-ghost" id="drag-ghost" hidden></div>
+
+  <script src="js/chronology.js"></script>
+</body>
+</html>
