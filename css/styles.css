@@ -258,7 +258,7 @@ img {
   grid-template-columns: 535fr 746fr;
   gap: 75rem;
   align-items: center;
-  margin-bottom: 158rem;
+  margin-bottom: 64rem;
 }
 
 .hero-text-internal {
@@ -305,7 +305,7 @@ img {
     grid-template-columns: none;
     gap: 32rem;
     padding-top: 20rem;
-    margin-bottom: 100rem;
+    margin-bottom: 48rem;
   }
 
   .internal-image {
@@ -324,7 +324,7 @@ img {
 @media (width < 768px) {
   .hero-internal {
     padding-top: 0;
-    margin-bottom: 86rem;
+    margin-bottom: 36rem;
   }
 
   .hero-text-internal {
