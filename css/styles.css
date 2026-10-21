@@ -277,11 +277,10 @@ img {
   box-shadow: 0 1rem 13.8rem rgba(182, 182, 182, 0.25);
   display: block;
   width: 100%;
-  min-height: 100%;
-  aspect-ratio: 746 / 450;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
   border-radius: 14rem;
-  background: #e8e8e8;
+  background: transparent;
 }
 
 @media (width < 1025px) {
